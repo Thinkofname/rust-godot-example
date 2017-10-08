@@ -1,0 +1,5 @@
+target/
+logs/
+
+godot/libgodot_example.so
+godot/.import/
