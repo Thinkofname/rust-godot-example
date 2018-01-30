@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.stex"
 
+[deps]
+
+source_file="res://art/enemyFlyingAlt_1.png"
+source_md5="bc44124688e67eae6a7e8e06951d26e5"
+
+dest_files=[ "res://.import/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.stex" ]
+dest_md5="90dc9cd95dd82562de07e46fb2899473"
+
 [params]
 
 compress/mode=0

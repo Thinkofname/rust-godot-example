@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/enemyWalking_1.png-5af6eedbe61b701677d490ffdc1e6471.stex"
 
+[deps]
+
+source_file="res://art/enemyWalking_1.png"
+source_md5="caf4c77f9958988f9055b62036778d6d"
+
+dest_files=[ "res://.import/enemyWalking_1.png-5af6eedbe61b701677d490ffdc1e6471.stex" ]
+dest_md5="7dc2f1e2dfa43850ba9785bba8a992ed"
+
 [params]
 
 compress/mode=0

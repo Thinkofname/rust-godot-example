@@ -11,46 +11,46 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1.71588, -0.309341, 0, 0, 0, 0, 481.244, 1.9046, 0, 0, 0, 0, 482.351, 722.542, 0, 0, 0, 0, 0.608398, 721.435, 0, 0, 0, 0, 2.8233, -0.309341 )
 }
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." index="0" instance=ExtResource( 2 )]
 
-[node name="MobTimer" type="Timer" parent="."]
+[node name="MobTimer" type="Timer" parent="." index="1"]
 
 process_mode = 1
 wait_time = 0.5
 one_shot = false
 autostart = false
 
-[node name="ScoreTimer" type="Timer" parent="."]
+[node name="ScoreTimer" type="Timer" parent="." index="2"]
 
 process_mode = 1
 wait_time = 1.0
 one_shot = false
 autostart = false
 
-[node name="StartTimer" type="Timer" parent="."]
+[node name="StartTimer" type="Timer" parent="." index="3"]
 
 process_mode = 1
 wait_time = 2.0
 one_shot = true
 autostart = false
 
-[node name="StartPosition" type="Position2D" parent="."]
+[node name="StartPosition" type="Position2D" parent="." index="4"]
 
 position = Vector2( 240, 450 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="MobPath" type="Path2D" parent="."]
+[node name="MobPath" type="Path2D" parent="." index="5"]
 
 curve = SubResource( 1 )
 
-[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath" index="0"]
 
 position = Vector2( 1.71588, -0.309341 )
-rotation = 1.57541
+rotation = 0.00461689
 offset = 0.0
 h_offset = 0.0
 v_offset = 0.0
@@ -59,7 +59,10 @@ cubic_interp = true
 loop = true
 lookahead = 4.0
 
-[node name="HUD" parent="." instance=ExtResource( 3 )]
+[node name="HUD" parent="." index="6" instance=ExtResource( 3 )]
+
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 
